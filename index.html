@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitație Nuntă</title>
+    <!-- Link către fișierul CSS pentru stilizare -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Secțiunea de Bun Venit -->
+    <section id="welcome">
+        <h1>Bine ați venit pe site-ul nunții noastre!</h1>
+        <p>Suntem nerăbdători să împărtășim această zi specială cu voi și să ne fiți alături în momentul în care spunem „Da!” pentru totdeauna. Vă invităm cu mult drag să luați parte la această sărbătoare a iubirii noastre!</p>
+    </section>
+
+    <!-- Detalii despre eveniment -->
+    <section id="event-details">
+        <h2>Detalii despre Eveniment</h2>
+        <p><strong>Data:</strong> 15 septembrie 2024</p>
+        <p><strong>Ceremonie religioasă:</strong> Biserica Sf. Maria, ora 15:00</p>
+        <p><strong>Recepție:</strong> Restaurantul Bella Notte, ora 18:00</p>
+    </section>
+
+    <!-- Povestea noastră -->
+    <section id="our-story">
+        <h2>Povestea Noastră</h2>
+        <p>Ne-am întâlnit în urmă cu trei ani, într-o zi care părea să fie ca oricare alta, dar care s-a dovedit a fi începutul celei mai frumoase povești. Din prima clipă, am simțit amândoi că suntem meniți să fim împreună, ca și cum inimile noastre se recunoscuseră de mult timp. Totul a decurs de la sine, natural și firesc, ca într-un roman de dragoste.</p>
+        <p>Fiecare zi alături ne-a apropiat mai mult, iar iubirea noastră a crescut în tăcere, frumoasă și sinceră, până când, într-o zi, a apărut pe lume minunea noastră — o fetiță care ne-a transformat și mai mult viețile. Cu venirea ei, am devenit un tot complet, o familie care se bucură de fiecare clipă petrecută împreună.</p>
+        <p>Acum, privim cu recunoștință la drumul parcurs și ne pregătim să facem următorul pas, să ne unim destinele în fața celor dragi, știind că aceasta este doar începutul unei vieți pline de iubire și fericire împreună.</p>
+    </section>
+
+    <!-- Secțiunea Nașii noștri -->
+    <section id="godparents">
+        <h2>Nașii Noștri</h2>
+        <p>Suntem binecuvântați să îi avem alături ca nași pe [Nume Naș] și [Nume Nașă], prietenii noștri de suflet și cei care ne-au fost alături în toate momentele importante. Prietenia dintre ei și noi este mai mult decât o legătură obișnuită — este o poveste de neuitat, începută cu mulți ani în urmă.</p>
+        <p>De fapt, nașul nostru și finul au fost cei mai buni prieteni încă de când se cunosc, împărtășind momente memorabile, vise și încredere. Cu 13 ani în urmă, într-un moment de bucurie și prietenie, [Nume Naș] i-a promis lui [Nume Fin] că îi va fi naș atunci când va veni momentul.</p>
+        <p>Acum, și noi două — nașa și fina — am devenit cele mai bune prietene. Ne bucurăm să împărtășim cu ei această zi specială, știind că, de-a lungul călătoriei noastre împreună, vom avea mereu alături oameni dragi, pe care ne putem baza și care ne susțin necondiționat.</p>
+    </section>
+
+    <!-- Secțiunea Părinții noștri -->
+    <section id="parents">
+        <h2>Părinții Noștri</h2>
+        <p>Am avut norocul să creștem înconjurați de dragostea unor părinți minunați, care ne-au fost alături necondiționat în fiecare etapă a vieții noastre.</p>
+        <p><strong>Părinții mirelui:</strong> [Nume Tată Mire] și [Nume Mamă Mire] ne-au fost mereu un exemplu de putere, iubire și răbdare. Ei ne-au învățat să fim buni și corecți, ne-au susținut visele și ne-au oferit mereu sfaturi pline de înțelepciune.</p>
+        <p><strong>Părinții miresei:</strong> Sprijinul și iubirea tatălui ei, [Nume Tată Mireasă], au fost o binecuvântare. Din păcate, mama ei, [Nume Mamă Mireasă], nu mai este fizic alături de noi, dar știm că spiritul ei veghează cu dragoste asupra acestui moment special.</p>
+    </section>
+
+    <!-- Formular de confirmare prezență -->
+    <section id="rsvp">
+        <h2>Confirmare Prezență</h2>
+        <p>Vă rugăm să confirmați prezența până la data de 1 august 2024, completând formularul de mai jos. Dacă aveți preferințe culinare sau cerințe speciale, nu ezitați să le specificați. Abia așteptăm să petrecem împreună o zi memorabilă!</p>
+        
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nume complet:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Număr de telefon:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="guests">Număr de persoane (inclusiv copii):</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <label for="diet">Preferințe alimentare:</label>
+            <select id="diet" name="diet">
+                <option value="standard">Standard</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="gluten-free">Fără gluten</option>
+                <option value="other">Alte preferințe (specificați mai jos)</option>
+            </select>
+
+            <label for="comments">Alte mențiuni (Comentarii):</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <button type="submit">Confirmați Prezența</button>
+        </form>
+    </section>
+
+</body>
+</html>
